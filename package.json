@@ -1,0 +1,38 @@
+{
+  "name": "reactjs-gas",
+  "version": "1.0.0",
+  "description": "Simple ReactJs, Google App Script, Tailwindcss and ParcelJs Template",
+  "source": "src/index.html",
+  "destination": "./app-script",
+  "scripts": {
+    "g:init": "clasp create --title 'ReactJs-GAS' --rootDir ./app-script",
+    "g:login": "clasp login",
+    "g:logout": "clasp logout",
+    "g:clone": "clasp clone {id} --rootDir ./app-script",
+    "g:pull": "clasp pull",
+    "g:push": "clasp push",
+    "g:start": "clasp push --watch",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "TXHENG",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.57",
+    "autoprefixer": "^10.4.13",
+    "clasp": "^1.0.0",
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.21",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.2"
+  },
+  "targets": {
+    "main": false
+  }
+}
